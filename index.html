@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nathan Serry — Engineering Sciences student at Ghent University. Software developer, problem solver, technology enthusiast.">
+  <title>Nathan Serry — Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- cursor -->
+  <div class="cur-ring" id="cring"></div>
+  <div class="cur-dot"  id="cdot"></div>
+
+  <!-- background grid -->
+  <div class="grid-bg"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">
+      <div class="logo-mark">NS</div>
+      Nathan Serry
+    </a>
+
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#about"      data-i="01">About</a></li>
+      <li><a href="#experience" data-i="02">Experience</a></li>
+      <li><a href="#projects"   data-i="03">Projects</a></li>
+      <li><a href="#skills"     data-i="04">Skills</a></li>
+      <li><a href="#mindset"    data-i="05">Mindset</a></li>
+      <li><a href="#contact"    data-i="06">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="icon-btn" id="theme-btn" aria-label="Toggle theme">
+        <svg id="ico-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg id="ico-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="hamburger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- ═══ HOME ═══ -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        Burgerlijk Ingenieur &nbsp;·&nbsp; Ghent University &nbsp;·&nbsp; Class of 2029
+      </div>
+      <h1 class="hero-name">
+        <span class="first">Nathan</span>
+        <span class="last">Serry</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="lbl">I'm an</span>
+        <span class="rot-shell"><span class="rot-word" id="rotw">Engineering Student</span></span>
+      </p>
+      <div class="hero-ctas">
+        <a href="#experience" class="btn btn-amber btn-arr">View Experience</a>
+        <a href="#projects"   class="btn btn-ghost btn-arr">My Projects</a>
+        <a href="#contact"    class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Photo frame -->
+    <div class="hero-frame">
+      <div class="hf-cm tl"></div>
+      <div class="hf-cm tr"></div>
+      <div class="hf-cm bl"></div>
+      <div class="hf-cm br"></div>
+      <img src="IMG_7302.jpg" alt="Nathan Serry">
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span class="scroll-txt">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="about-wrap">
+      <div>
+        <div class="sec-header reveal">
+          <div class="sec-label">Profile</div>
+          <h2 class="sec-title">More than a student.</h2>
+          <p class="sec-desc">I don't just study engineering — I practise it. Real projects, real code, real responsibility.</p>
+        </div>
+        <div class="about-story reveal">
+          <p>My journey started with <strong>curiosity</strong>. While most people use technology, I've always wanted to understand how it works — and then improve it.</p>
+          <div class="about-pull">
+            "I chose engineering not because it was easy, but because problems worth solving rarely are."
+          </div>
+          <p>Long before university I was already writing production-quality code: API integrations, SDK libraries, customer-facing technical support. Real deliverables at a financial technology company — not internship busywork.</p>
+          <p>Today I'm in my first year of <strong>Engineering Sciences (Burgerlijk Ingenieur)</strong> at Ghent University, building a rigorous mathematical and physical foundation on top of practical experience that most students my age don't yet have.</p>
+        </div>
+
+        <div class="lang-block reveal d1">
+          <div class="sg-title">Languages</div>
+          <div class="lang-row">
+            <span class="lang-n">Dutch</span>
+            <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div></div>
+            <span class="lang-lbl">Native</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-n">English</span>
+            <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div></div>
+            <span class="lang-lbl">Fluent</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-n">French</span>
+            <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld"></div></div>
+            <span class="lang-lbl">Good</span>
+          </div>
+          <div class="lang-row">
+            <span class="lang-n">German</span>
+            <div class="lang-dots"><div class="ld on"></div><div class="ld"></div><div class="ld"></div><div class="ld"></div><div class="ld"></div></div>
+            <span class="lang-lbl">Beginner</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="photo-ph reveal d2">
+          <img src="IMG_7302.jpg" alt="Nathan Serry">
+          <div class="cm tl"></div><div class="cm tr"></div>
+          <div class="cm bl"></div><div class="cm br"></div>
+        </div>
+        <div class="pers-grid">
+          <div class="pers-card reveal d1"><div class="pc-ico">⚡</div><div class="pc-t">Curious</div><div class="pc-d">Always exploring new technologies independently — AI models, embedded systems, new frameworks.</div></div>
+          <div class="pers-card reveal d2"><div class="pc-ico">◈</div><div class="pc-t">Analytical</div><div class="pc-d">Engineering mindset with strong mathematical foundations and structured problem decomposition.</div></div>
+          <div class="pers-card reveal d3"><div class="pc-ico">◎</div><div class="pc-t">Independent</div><div class="pc-d">Handled real projects with genuine responsibility — not guided exercises or toy assignments.</div></div>
+          <div class="pers-card reveal d4"><div class="pc-ico">◐</div><div class="pc-t">Communicative</div><div class="pc-d">From debugging APIs with developers to teaching swimming to 5-year-olds — I adapt.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <div class="sec-header reveal">
+      <div class="sec-label">Work History</div>
+      <h2 class="sec-title">Where I've contributed.</h2>
+      <p class="sec-desc">Real roles with real deliverables — across software engineering, digital marketing, and education.</p>
+    </div>
+
+    <div class="tl">
+      <div class="tl-item reveal">
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-co">Dinasport</span>
+            <span class="tl-dt">2025</span>
+          </div>
+          <div class="tl-role">Software Developer &amp; IT Specialist</div>
+          <p class="tl-desc">Managed the full digital presence for multiple sports brands: social media strategy, marketing campaigns, website maintenance, and internal tooling. A rare role combining technical depth with business thinking and creative communication.</p>
+          <div class="tags">
+            <span class="tag">Social Media</span><span class="tag">Web</span><span class="tag">Marketing</span><span class="tag">Digital Strategy</span><span class="tag">Odoo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal d1">
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-co">Twikey</span>
+            <span class="tl-dt">2022 — 2025</span>
+          </div>
+          <div class="tl-role">Financial Technology · Developer &amp; Specialist</div>
+          <div class="year-tl">
+            <div class="year-item">
+              <span class="yr-label">2022–23</span>
+              <div class="yr-body">
+                <span class="yr-role">Front-end</span>
+                <span class="yr-desc">Pricing page HTML &amp; CSS updates; Italian website translation.</span>
+              </div>
+            </div>
+            <div class="year-item">
+              <span class="yr-label">2024</span>
+              <div class="yr-body">
+                <span class="yr-role">Support &amp; Ops</span>
+                <span class="yr-desc">Customer support, system cleanup and ticketing platform migration.</span>
+              </div>
+            </div>
+            <div class="year-item">
+              <span class="yr-label">2025</span>
+              <div class="yr-body">
+                <span class="yr-role">SDK Dev</span>
+                <span class="yr-desc">Maintained and updated SDKs in Java, Python and PHP.</span>
+              </div>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Angular</span><span class="tag">Python</span><span class="tag">PHP</span><span class="tag">Java</span><span class="tag">SDK Dev</span><span class="tag">Translation</span><span class="tag">Customer Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal d2">
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-co">Swimming Club</span>
+            <span class="tl-dt">2024 — 2025</span>
+          </div>
+          <div class="tl-role">Swimming Instructor</div>
+          <p class="tl-desc">Responsible for teaching swimming to children aged 5–7. Developed clear, adaptive explanations tailored to different learning styles, managed group safety, and built trust with parents and fellow instructors.</p>
+          <div class="tags">
+            <span class="tag">Teaching</span><span class="tag">Safety</span><span class="tag">Adaptive Communication</span><span class="tag">Responsibility</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal d3">
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-co">Van der Valk Nazareth</span>
+            <span class="tl-dt">Summer 2022</span>
+          </div>
+          <div class="tl-role">Restaurant Team Member</div>
+          <p class="tl-desc">Fast-paced hospitality environment requiring discipline, precision teamwork, and the ability to consistently deliver quality service under sustained pressure.</p>
+          <div class="tags">
+            <span class="tag">Teamwork</span><span class="tag">Discipline</span><span class="tag">Pressure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="sec-header reveal">
+      <div class="sec-label">Portfolio</div>
+      <h2 class="sec-title">Things I've built.</h2>
+      <p class="sec-desc">University prototypes, personal experiments, and production contributions — always driven by the same question: "How does this work, and can I make it better?"</p>
+    </div>
+
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <div class="proj-num">PROJECT / 001</div>
+        <div class="proj-ico">⬡</div>
+        <div class="proj-name">Arduino Touchpad</div>
+        <p class="proj-desc">University engineering project: designed and built a paper-based touchpad using graphite's conductive properties and an Arduino microcontroller. A physical bridge between materials science, electronics, and embedded programming.</p>
+        <div class="tags">
+          <span class="tag">Arduino</span><span class="tag">Embedded</span><span class="tag">Electronics</span><span class="tag">Prototyping</span><span class="tag">C++</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal d1">
+        <div class="proj-num">PROJECT / 002</div>
+        <div class="proj-ico">◈</div>
+        <div class="proj-name">AI &amp; Local LLM Exploration</div>
+        <p class="proj-desc">Personal deep-dive into local AI systems using Ollama and open-source models. Experimenting with prompt engineering, model optimization, and building practical automation workflows — well before it became mainstream.</p>
+        <div class="tags">
+          <span class="tag">Ollama</span><span class="tag">LLMs</span><span class="tag">Prompt Engineering</span><span class="tag">Python</span><span class="tag">Automation</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal d2">
+        <div class="proj-num">PROJECT / 003</div>
+        <div class="proj-ico">⟐</div>
+        <div class="proj-name">SDK Development</div>
+        <p class="proj-desc">Contributed to production-grade SDK libraries in Python and PHP used by enterprise clients of a financial technology platform. Also built front-end components in Angular, wrote integration guides, maintained API documentation, and supported developers integrating the product.</p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">PHP</span><span class="tag">Angular</span><span class="tag">REST APIs</span><span class="tag">Documentation</span><span class="tag">Open Source</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal d3">
+        <div class="proj-num">PROJECT / 004</div>
+        <div class="proj-ico">▣</div>
+        <div class="proj-name">Custom Desktop PC Build</div>
+        <p class="proj-desc">Researched, selected, and assembled a complete desktop PC from individual components in 2023 — still the most satisfying thing I've built. From CPU compatibility and thermal management to cable routing, the build deepened my understanding of computer architecture, hardware interfaces, and system-level performance in a way no course could.</p>
+        <div class="tags">
+          <span class="tag">Hardware</span><span class="tag">PC Assembly</span><span class="tag">System Architecture</span><span class="tag">Research</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal d4">
+        <div class="proj-num">PROJECT / 005</div>
+        <div class="proj-ico">◫</div>
+        <div class="proj-name">Modularity in Modern Technology</div>
+        <p class="proj-desc">University web project exploring the advantages of modular design across contemporary technology — from software architecture to hardware systems. Built as a standalone informational site with clean hierarchy and clear visual structure.</p>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Web Design</span><span class="tag">Academic</span>
+        </div>
+        <a href="https://nathan-serry.github.io/DOE-BeperktHerstel" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-arr">View Live</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="sec-header reveal">
+      <div class="sec-label">Capabilities</div>
+      <h2 class="sec-title">My technical toolkit.</h2>
+      <p class="sec-desc">Built through real use, not just tutorials. Every entry here has been applied in an actual project or professional context.</p>
+    </div>
+
+    <div class="skills-wrap">
+      <div class="reveal">
+        <div class="sg-title">Programming</div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">Python</span><span class="sb-lv">Advanced</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="82"></div></div>
+        </div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">HTML &amp; CSS</span><span class="sb-lv">Advanced</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="86"></div></div>
+        </div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">JavaScript</span><span class="sb-lv">Intermediate</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="58"></div></div>
+        </div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">PHP</span><span class="sb-lv">Intermediate</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="55"></div></div>
+        </div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">Angular</span><span class="sb-lv">Intermediate</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="53"></div></div>
+        </div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">Java</span><span class="sb-lv">Familiar</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="38"></div></div>
+        </div>
+        <div class="sb-item">
+          <div class="sb-hd"><span class="sb-name">C++ / Arduino</span><span class="sb-lv">Familiar</span></div>
+          <div class="sb-track"><div class="sb-fill c" data-w="34"></div></div>
+        </div>
+      </div>
+
+      <div class="reveal d1">
+        <div class="sg-title">Engineering</div>
+        <div class="s-tags">
+          <span class="s-tag">Mathematics</span><span class="s-tag">Physics</span><span class="s-tag">Electronics</span>
+          <span class="s-tag">Modelling</span><span class="s-tag">Problem Solving</span><span class="s-tag">Prototyping</span>
+          <span class="s-tag">Embedded Systems</span><span class="s-tag">Materials</span>
+        </div>
+
+        <div class="sg-title">Tools &amp; Platforms</div>
+        <div class="s-tags">
+          <span class="s-tag">Git</span><span class="s-tag">VS Code</span><span class="s-tag">Arduino IDE</span>
+          <span class="s-tag">Odoo</span><span class="s-tag">Ollama</span><span class="s-tag">Linux</span>
+          <span class="s-tag">Adobe Creative Suite</span>
+        </div>
+
+        <div class="sg-title">Soft Skills</div>
+        <div class="s-tags">
+          <span class="s-tag">Teaching</span><span class="s-tag">Technical Writing</span>
+          <span class="s-tag">Translation</span><span class="s-tag">Customer Support</span>
+          <span class="s-tag">Independent Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MINDSET ═══ -->
+  <section id="mindset">
+    <div class="sec-header reveal">
+      <div class="sec-label">Philosophy</div>
+      <h2 class="sec-title">How I think.</h2>
+    </div>
+
+    <div class="mind-wrap">
+      <div class="mind-text reveal">
+        <p>I'm drawn to situations where there's no obvious solution. Breaking a complex problem into smaller, understandable pieces is what engineering is really about — and it's the part I enjoy most.</p>
+        <p>Whether it's debugging a failing API integration, wiring a circuit prototype, or explaining a concept to a 6-year-old, my approach stays the same: <strong>understand first, then act.</strong></p>
+        <div class="mind-vals">
+          <div class="mv"><div class="mv-dot"></div><span class="mv-t">First principles thinking</span></div>
+          <div class="mv"><div class="mv-dot"></div><span class="mv-t">Build, test, refine</span></div>
+          <div class="mv"><div class="mv-dot"></div><span class="mv-t">Learn by doing</span></div>
+          <div class="mv"><div class="mv-dot"></div><span class="mv-t">Question assumptions</span></div>
+          <div class="mv"><div class="mv-dot"></div><span class="mv-t">Continuous improvement</span></div>
+          <div class="mv"><div class="mv-dot"></div><span class="mv-t">Communicate clearly</span></div>
+        </div>
+      </div>
+
+      <div class="flow reveal d1">
+        <div class="flow-step">
+          <div class="fs-num">01</div>
+          <div class="fs-body">
+            <div class="fs-t">Understand the Problem</div>
+            <div class="fs-d">Resist the urge to jump to solutions. Define what's actually broken or missing.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="fs-num">02</div>
+          <div class="fs-body">
+            <div class="fs-t">Decompose</div>
+            <div class="fs-d">Break complexity into smaller, independently solvable components.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="fs-num">03</div>
+          <div class="fs-body">
+            <div class="fs-t">Design a Solution</div>
+            <div class="fs-d">Choose the simplest approach that solves the problem correctly.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="fs-num">04</div>
+          <div class="fs-body">
+            <div class="fs-t">Build a Prototype</div>
+            <div class="fs-d">Ship a working version quickly. Imperfect and running beats perfect and theoretical.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="fs-num">05</div>
+          <div class="fs-body">
+            <div class="fs-t">Test &amp; Refine</div>
+            <div class="fs-d">Let reality provide the feedback. Iterate until it's right.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ JOURNEY ═══ -->
+  <section id="journey">
+    <div class="sec-header reveal">
+      <div class="sec-label">Timeline</div>
+      <h2 class="sec-title">The journey so far.</h2>
+      <p class="sec-desc">Seven years of building, experimenting, and growing.</p>
+    </div>
+
+    <div class="jrn-wrap reveal d1">
+      <div class="jrn-rail"></div>
+      <div class="jrn-items">
+        <div class="jrn-item">
+          <div class="jrn-dot on"></div>
+          <div class="jrn-yr">2019</div>
+          <div class="jrn-ev">First contact with computers and technology. Building curiosity from the ground up.</div>
+        </div>
+        <div class="jrn-item">
+          <div class="jrn-dot on"></div>
+          <div class="jrn-yr">2022</div>
+          <div class="jrn-ev">First professional software experience. Front-end development and first summer job.</div>
+        </div>
+        <div class="jrn-item">
+          <div class="jrn-dot on"></div>
+          <div class="jrn-yr">2023</div>
+          <div class="jrn-ev">Deeper API and SDK development. Python and PHP in production environments.</div>
+        </div>
+        <div class="jrn-item">
+          <div class="jrn-dot on"></div>
+          <div class="jrn-yr">2024</div>
+          <div class="jrn-ev">Became a swimming instructor for children. Continued SDK and support work at Twikey. Started weekend job at Dinasport</div>
+        </div>
+        <div class="jrn-item">
+          <div class="jrn-dot on"></div>
+          <div class="jrn-yr">2025</div>
+          <div class="jrn-ev">Enrolled in Engineering Sciences at Ghent University. Started exploring local AI models.</div>
+        </div>
+        <div class="jrn-item">
+          <div class="jrn-dot on"></div>
+          <div class="jrn-yr">2026 →</div>
+          <div class="jrn-ev">Continuing to build — in university, in projects, and in everything in between.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="cta-wrap reveal">
+      <div class="cta-label">Get in touch</div>
+      <h2 class="cta-title">Let's work<br>together.</h2>
+      <p class="cta-desc">Open to internships, student jobs, collaborations and interesting conversations. Whether you have a project in mind or just want to connect — reach out.</p>
+
+      <div class="cta-links">
+        <a href="mailto:nathan@serry.org" class="cta-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/nathan-serry-309478421/" class="cta-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/nathan-serry" class="cta-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="/cv.pdf" class="cta-link" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <p class="ft-txt">NATHAN SERRY &nbsp;·&nbsp; ENGINEERING PORTFOLIO &nbsp;·&nbsp; GHENT, BELGIUM &nbsp;·&nbsp; <span id="yr"></span></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
